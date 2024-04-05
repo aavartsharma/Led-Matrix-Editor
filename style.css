@@ -1,0 +1,35 @@
+body
+{
+    background-color: rgb(8, 44, 68);
+}
+
+#displayContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayclass
+{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+#displaygrid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+.pixel
+{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 6px 11px;
+    padding: 10px;
+    cursor: pointer;
+}
