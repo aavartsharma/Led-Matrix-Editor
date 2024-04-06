@@ -8,28 +8,50 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid goldenrod;
 }
 
-.displayclass
+#linecount
 {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid black;
+    display: block;
+}
+
+.numberclass
+{
+    margin-top: 12px;
+    text-align: left;
+    color: white;
 }
 
 #displaygrid
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 10px; /* Gap between grid items */
+    grid-gap: 0px; /* Gap between grid items */
+    margin: 20px;
+}
+
+.displayclass
+{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ff00c8;
+    background-color: black;
 }
 
 .pixel
 {
+    border: 0px solid black;
     background-color: white;
-    border: 2px solid black;
     border-radius: 30px;
-    margin: 6px 11px;
-    padding: 10px;
+    margin: 2px 2px;
+    padding: 13px;
     cursor: pointer;
+}
+
+.colorButton
+{
+    margin-top: 17px;
+    text-align: left;
+    color: white;
 }
