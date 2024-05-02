@@ -28,14 +28,12 @@ for (let i = 0; i < moduleNumber; i++)
   divDisplayer.classList.add("arrayPrint");
   let prentDiv = document.getElementById("ontextColumn");
   divDisplayer.textContent = ListOnDisplay;
-  // MaindivList.textContent = "{"+MainList+"}"; // work here
   MaindivList.textContent = "{" + ListOnDisplay+ "," + ListOnDisplay + "," + ListOnDisplay + "," + ListOnDisplay + "}";
   prentDiv.appendChild(divDisplayer);
   for (let k = 0; k < 8; k++) 
   {
     let div = document.createElement("div");
     div.classList.add("checkkkk");
-    // MainDict[DisplayString][rowID] = {};
     for (let j = 0; j < 8; j++) 
     {
       // Create a span element
@@ -50,8 +48,6 @@ for (let i = 0; i < moduleNumber; i++)
       MainDict[DisplayString][ID] = "0";
       buttonIDCounter++;
       button.classList.add("pixel");
-
-      // MainDict[DisplayString][rowID][ColumnID] = "0";
 
       // Add event listener to the button for the "click" event
       button.addEventListener("click", () => {
@@ -85,10 +81,8 @@ for (let i = 0; i < moduleNumber; i++)
       span.appendChild(button);
       div.appendChild(span);
     }
-    // arrayList.push(innerlist);  work here
     moduleDiv.appendChild(div);
   }
-  // BinaryList.push(arrayList);  work here
 }
 
 for (let i = 1; i <= moduleNumber * 4; i++) // for side counting bar
@@ -164,6 +158,7 @@ function showHexString(Dict,display) // display is string
 {
   return makeHexString(makeHexStringFromDict(Dict,display));
 }
+
 function mainStringMaker()
 {
   let mainstring = "{";
@@ -179,6 +174,7 @@ function mainStringMaker()
 
   return mainstring;
 }
+
 function makeHexString(List) 
 {
   let Astring = "{";
@@ -218,13 +214,10 @@ function makeHexStringFromDict(Dict,display) /* first find the  */
       BinaryString ="";  
     }
   }
-  // arraryOfhex.push(binaryToHex(BinaryString));
   return arraryOfhex;
 }
 
-
-
-function BinaryListToHex(List) 
+/*function BinaryListToHex(List) 
 {
   let string = "";
   List.forEach(bit => {
@@ -232,9 +225,9 @@ function BinaryListToHex(List)
   });
   let hexaNumber = binaryToHex(string);
   return hexaNumber;
-}
+}*/
 
-function BinaryListToHexSndreturnsalist(List) 
+/*function BinaryListToHexSndreturnsalist(List) 
 {
   let bitString = "";
   List.forEach(bit => {
@@ -243,7 +236,7 @@ function BinaryListToHexSndreturnsalist(List)
   let hexaNumber = binaryToHex(bitString);
   return hexaNumber;
 
-}
+}*/
 
 function binaryToHex(binary) 
 {
